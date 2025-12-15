@@ -233,7 +233,7 @@ header .navbar {
 .menu-section {
     padding: 120px 0;
     color: var(--white-color);
-    background: var(--dark-color);
+    background: var(--primary-color);
 }
 
 .menu-section .menu-title {
@@ -264,6 +264,52 @@ header .navbar {
  .menu-section .menu-details .name {
     margin-bottom: 12px;
  }
+
+ .testimonials-section {
+    padding: 50px 0 100px;
+    background: var(--light-pink-color);
+ }
+
+ .testimonials-section .testimonial {
+    display: flex;
+    padding: 35px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .testimonials-section .testimonial .user-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 50px;
+    border-radius: var(--border-radius-circle);
+ }
+
+ .testimonials-section .testimonial .name {
+    margin-bottom: 16px;
+    font-size: var(--font-size-m);
+ }
+
+ .testimonials-section .testimonial .feedback {
+    line-height: 25px;
+ }
+
+ .testimonials-section .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    background: var(--secondary-color);
+ }
+
+ .testimonials-section .swiper-slide-button {
+    color: var(--secondary-color);
+    transition: 0.3s ease;
+ }
+ .testimonials-section .swiper-slide-button:hover {
+    color: var(--primary-color);
+ }
+
 
  @media screen and (max-width: 900px) {
     .menu-section .menu-list {

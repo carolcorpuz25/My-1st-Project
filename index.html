@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Bakery Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -148,46 +149,52 @@
     <section class="testimonials-section">
         <h2 class="section-title">Testimonials</h2>
         <div class="section-content">
-            <div class="slider-container">
+            <div class="slider-container swiper">
                 <div class="slider-wrapper">
-                    <ul class="testimonials-list">
-                        <li class="testimonial">
+                    <ul class="testimonials-list swiper-wrapper">
+                        <li class="testimonial swiper-slide">
                             <img src="images/user-1.jpg" alt="User" class="user-image">
                             <h3 class="name">Sarah Johnson</h3>
                             <i class="feedback">"Loved the cookies. Perfectly balance of sweetness.
                                  Will order again."</i>
                         </li>
-                        <li class="testimonial">
+                        <li class="testimonial swiper-slide">
                             <img src="images/user-2.jpg" alt="User" class="user-image">
                             <h3 class="name">James Wilson</h3>
                             <i class="feedback">“Rich and creamy with a perfect coffee-soaked flavor.
                                  Light cocoa dust on top adds a nice touch.”</i>
                         </li>
-                        <li class="testimonial">
+                        <li class="testimonial swiper-slide">
                             <img src="images/user-3.jpg" alt="User" class="user-image">
                             <h3 class="name">Michael Brown</h3>
                             <i class="feedback">“Hot coffee is bold and comforting, while cold coffee is sweet, refreshing, and smooth.
                                  Great choices for any mood!”</i>
                         </li>
-                        <li class="testimonial">
+                        <li class="testimonial swiper-slide">
                             <img src="images/user-4.jpg" alt="User" class="user-image">
                             <h3 class="name">Emily Harris</h3>
                             <i class="feedback">“Cute mini treats with soft texture and just the right amount of frosting. 
                                 Perfect for snacking or sharing.”</i>
                         </li>
-                        <li class="testimonial">
+                        <li class="testimonial swiper-slide">
                             <img src="images/user-5.jpg" alt="User" class="user-image">
                             <h3 class="name">Anthony Thompson</h3>
                             <i class="feedback">“Soft, moist, and indulgent. Chocolate flavor is rich without 
                                 being overpowering classic and satisfying.”</i>
                         </li>
                     </ul>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button-swiper-button-prev"></div>
+                    <div class="swiper-slide-button-swiper-button-next"></div>
                 </div>
             </div>
         </div>
     </section>
 
   </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
   <script src="script.js"></script>
 </body>
