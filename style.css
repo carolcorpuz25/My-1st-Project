@@ -199,7 +199,7 @@ header .navbar {
     border-radius: var(--border-radius-circle);
 }
 
-.about-section .about-details .section-title {
+.about-section  .about-details .section-title {
     padding: 0;
 }
 
@@ -229,6 +229,72 @@ header .navbar {
 .about-section .social-link-list .social-link:hover {
     color: brown; 
 }
+
+.menu-section {
+    padding: 120px 0;
+    color: var(--white-color);
+    background: var(--dark-color);
+}
+
+.menu-section .menu-title {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+ .menu-section .menu-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-items: center;
+ }
+
+ .menu-section .menu-list .menu-item {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+ }
+
+ .menu-section .menu-list .menu-item .menu-image {
+    max-width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+ }
+
+ .menu-section .menu-details .name {
+    margin-bottom: 12px;
+ }
+
+ @media screen and (max-width: 900px) {
+    .menu-section .menu-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-section .menu-list .menu-item {
+        width: 100%;
+        max-width: 320px;
+    }
+    .menu-section .menu-title {
+        font-size: 1.9rem;
+    }
+    .menu-section .menu-list .menu-item .menu-image {
+        max-width: 200px;
+    }
+ }
+
+ @media screen and (max-width: 500px) {
+    .menu-section .menu-list {
+        grid-template-columns: 1fr; 
+    }
+    .menu-section .menu-title {
+        font-size: 1.8rem;
+    }
+
+    .menu-section .menu-list .menu-item .menu-image {
+        max-width: 160px;
+    }
+ }
+
 @media screen and (max-width: 900px) {
     :root {
         --font-size-m: 1rem;
