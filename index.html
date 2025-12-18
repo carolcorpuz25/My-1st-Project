@@ -230,11 +230,11 @@
             <ul class="contact-info-list">
                 <li class="contact-info">
                     <i class="fa-solid fa-location-crosshairs"></i>
-                    <p>123 Camsite Avenue, Wilderness, CA 98765</p>
+                    <p>Lalaan II Silang Cavite </p>
                 </li>
                 <li class="contact-info">
                     <i class="fa-regular fa-envelope"></i>
-                    <p>bakebitewebsite.com</p>
+                    <p>bakebite@gmail.com</p>
                 </li>
                 <li class="contact-info">
                     <i class="fa-solid fa-phone"></i>
@@ -242,7 +242,7 @@
                 </li>
                 <li class="contact-info">
                     <i class="fa-regular fa-clock"></i>
-                    <p>Monday - Saturday: 9:00 AM - 5:00 PM</p>
+                    <p>Monday - Saturday (9:00 AM - 5:00 PM)</p>
                 </li>
                 <li class="contact-info">
                     <i class="fa-regular fa-clock"></i>
@@ -254,14 +254,17 @@
                 </li>
             </ul>
 
-            <form action="#" class="contact-form">
-                <input type="text"placeholder="Your name" class="form-input" required>
-                <input type="email"placeholder="Your email" class="form-input" required>
-                <textarea placeholder="Your message" class="form-input" required></textarea>
-                <button class="submit-button">Submit</button>
+            <form action="send-message.php" method="POST">
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Submit</button>
             </form>
+            
         </div>
     </section>
+
+
 
     <footer class="footer-section">
         <div class="section-content">
