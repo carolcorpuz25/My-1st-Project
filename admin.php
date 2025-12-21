@@ -3,7 +3,7 @@ session_start();
 
 // Check if admin is logged in
  if(!isset($_SESSION['admin_id'])) {
-   header("Location: login.php");
+   header("Location: login-form.php");
    exit();
 }
 
@@ -23,7 +23,7 @@ if(isset($_GET['logout'])) {
     session_destroy();
     
     // Redirect using JavaScript as backup
-    echo "<script>window.location.href='login.php';</script>";
+    echo "<script>window.location.href='login-form.php';</script>";
     exit();
 }
 

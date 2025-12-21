@@ -13,7 +13,7 @@
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background:  #835f42;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -67,7 +67,7 @@
         .submit-button {
             width: 100%;
             padding: 15px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background:  #835f42;
             color: white;
             border: none;
             border-radius: 10px;
