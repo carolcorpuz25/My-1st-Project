@@ -117,6 +117,9 @@
             
             <button type="submit" class="submit-button">Login to Dashboard</button>
         </form>
+           <div class="link">
+              No account yet? <a href="register-form.php">Register</a>
+           </div>
     </div>
 </body>
 </html>

@@ -17,6 +17,33 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+
+$result = $conn->query("SELECT id, name, email FROM admins");
+?>
+
+<table border="1" cellpadding="10">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php while($row = $result->fetch_assoc()): ?>
+        <tr>
+            <td><?= htmlspecialchars($row['name']) ?></td>
+            <td><?= htmlspecialchars($row['email']) ?></td>
+            <td>
+                <a href="delete_account.php?id=<?= $row['id'] ?>" onclick="return confirm('Are you sure you want to delete this account?');">
+                    Delete
+                </a>
+            </td>
+        </tr>
+        <?php endwhile; ?>
+    </tbody>
+</table>
+
 // Handle logout
 if(isset($_GET['logout'])) {
     $_SESSION = array();
